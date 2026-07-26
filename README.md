@@ -35,5 +35,5 @@ By leveraging the **Isolation Forest** unsupervised algorithm, the system detect
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/Energy-Pipeline-AI-Detector.git](https://github.com/YOUR_USERNAME/Energy-Pipeline-AI-Detector.git)
+git clone [https://github.com/cii1-7/Energy-Pipeline-AI-Detector.git](https://github.com/cii1-7/Energy-Pipeline-AI-Detector.git)
 cd Energy-Pipeline-AI-Detector
