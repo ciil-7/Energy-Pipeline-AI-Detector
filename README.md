@@ -1,7 +1,7 @@
 # ⚡ AI-Powered Energy & Gas Pipeline Anomaly Detector
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Domain-Energy%20%26%20Gas-FF8C00?style=for-the-badge&logo=prometheus&logoColor=white" />
   <img src="https://img.shields.io/badge/AI/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/Focus-Predictive%20Maintenance-00A3E0?style=for-the-badge" />
@@ -31,34 +31,16 @@ Using the **Isolation Forest** algorithm, the system evaluates generated telemet
 ---
 
 ## 📈 Model Performance & Evaluation
-To validate detection capabilities beyond visual telemetry charts, synthetic hazard events were injected to benchmark the algorithm:
+To validate detection capabilities beyond visual telemetry charts, synthetic hazard events were injected to benchmark the algorithm. 
 
-| Metric | Score | Description |
+> **Reproducibility Note:** The metrics below are computed dynamically by running `pipeline_ai_detector.py` with `seed=42` and `n_samples=200`:
+
+| Metric | Benchmark Score | Evaluation Method |
 | :--- | :--- | :--- |
-| **Detection Accuracy** | **98.0%** | Overall model classification reliability across all telemetry frames. |
-| **Precision (Anomalies)** | **100.0%** | Proportion of flagged alerts that were genuine synthetic hazards. |
-| **Recall (Anomalies)** | **90.0%** | Percentage of total synthetic hazards successfully identified by AI. |
+| **Detection Accuracy** | **98.0%** | `sklearn.metrics.accuracy_score` |
+| **Precision (Anomalies)** | **100.0%** | `sklearn.metrics.precision_score` |
+| **Recall (Anomalies)** | **90.0%** | `sklearn.metrics.recall_score` |
 
----
-
-## 🔬 Key Features
-- **📡 Synthetic Telemetry Simulation:** Generates simulated physical parameters (Pressure in PSI, Flow Rate in kBPD, Temperature in °C) with injected ground-truth hazard events.
-- **🤖 Unsupervised Anomaly Detection:** Applies `Isolation Forest` to flag irregular data patterns without static thresholding.
-- **📊 Quantitative Evaluation:** Computes Precision, Recall, Accuracy, and Confusion Matrices to verify hazard detection performance.
-- **🚨 Interactive Dashboard:** Features a `Streamlit` web interface to visualize sensor trends and flagged anomalies.
-
----
-
-## 🛠️ Tech Stack & Dependencies
-* **Programming Language:** Python 3.9+
-* **Machine Learning & Data Science:** `scikit-learn`, `pandas`, `numpy`
-* **Visualization & Web App:** `streamlit`, `matplotlib`
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+To verify these exact figures locally, execute:
 ```bash
-git clone [https://github.com/cii1-7/Energy-Pipeline-AI-Detector.git](https://github.com/cii1-7/Energy-Pipeline-AI-Detector.git)
-cd Energy-Pipeline-AI-Detector
+python pipeline_ai_detector.py
