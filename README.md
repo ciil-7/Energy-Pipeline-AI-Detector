@@ -9,18 +9,17 @@
 
 ---
 
-## 📌 Executive Overview
-An enterprise-grade **Machine Learning monitoring solution** designed to analyze real-time telemetry data (Pressure, Flow Rate, Temperature) across oil & natural gas pipelines. 
+## 📌 Overview
+This project demonstrates how unsupervised machine learning can be applied to simulated pipeline sensor data for anomaly detection. 
 
-By leveraging the **Isolation Forest** unsupervised algorithm, the system detects critical operational hazards—such as **pipeline leaks, high-pressure blockages, and thermal overheating**—in real-time, preventing catastrophic structural failures.
+Using the **Isolation Forest** algorithm, the system evaluates generated telemetry data—including Pressure, Flow Rate, and Temperature—to identify potential operational anomalies such as simulated leaks, pressure drops, and thermal spikes.
 
 ---
 
-## 🔬 Core Features & System Architecture
-- **📡 Multi-Sensor Telemetry Streaming:** Simulates real-time physical parameters including Pressure (PSI), Flow Rate (kBPD), and Temperature (°C).
-- **🤖 Unsupervised AI Detection:** Uses `Isolation Forest` to automatically flag structural anomalies without relying on rigid static thresholds.
-- **🚨 Automated Incident Logging:** Outputs time-stamped incident logs for field response teams.
-- **📊 Interactive Analytics Dashboard:** Built-in web application via `Streamlit` to visualize risk zones dynamically.
+## 🔬 Key Features
+- **📡 Synthetic Telemetry Simulation:** Generates simulated physical parameters (Pressure in PSI, Flow Rate in kBPD, Temperature in °C) for demonstration purposes.
+- **🤖 Unsupervised Anomaly Detection:** Applies `Isolation Forest` to flag irregular data patterns without static thresholding.
+- **🚨 Interactive Dashboard:** Features a `Streamlit` web interface to visualize sensor trends and flagged anomalies.
 
 ---
 
