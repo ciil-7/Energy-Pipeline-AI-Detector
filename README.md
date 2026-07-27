@@ -16,6 +16,12 @@ Using the **Isolation Forest** algorithm, the system evaluates generated telemet
 
 ---
 
+## 📊 Data Source & Disclaimer
+> **Note on Data Generation:**  
+> To ensure continuous demonstration without relying on proprietary industrial telemetry, this project uses **synthetic data generated via Python NumPy standard normal distributions** (`np.random.normal`). This mathematical simulation accurately mimics real-world sensor fluctuations and operational noise for educational and proof-of-concept modeling purposes.
+
+---
+
 ## 🔬 Key Features
 - **📡 Synthetic Telemetry Simulation:** Generates simulated physical parameters (Pressure in PSI, Flow Rate in kBPD, Temperature in °C) for demonstration purposes.
 - **🤖 Unsupervised Anomaly Detection:** Applies `Isolation Forest` to flag irregular data patterns without static thresholding.
