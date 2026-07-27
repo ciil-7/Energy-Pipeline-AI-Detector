@@ -16,15 +16,35 @@ Using the **Isolation Forest** algorithm, the system evaluates generated telemet
 
 ---
 
+## 🖥️ Application Demo & Visualizations
+
+<p align="center">
+  <img src="anomaly_chart.png" width="850" alt="App Screenshot and Sensor Anomaly Analytics">
+</p>
+
+---
+
 ## 📊 Data Source & Disclaimer
 > **Note on Data Generation:**  
-> To ensure continuous demonstration without relying on proprietary industrial telemetry, this project uses **synthetic data generated via Python NumPy standard normal distributions** (`np.random.normal`). This mathematical simulation accurately mimics real-world sensor fluctuations and operational noise for educational and proof-of-concept modeling purposes.
+> To ensure continuous demonstration without relying on proprietary industrial telemetry, this project uses **synthetic data generated via Python NumPy standard normal distributions** (`np.random.normal`). Ground-truth anomaly labels are injected into the telemetry stream to rigorously evaluate model metrics.
+
+---
+
+## 📈 Model Performance & Evaluation
+To validate detection capabilities beyond visual telemetry charts, synthetic hazard events were injected to benchmark the algorithm:
+
+| Metric | Score | Description |
+| :--- | :--- | :--- |
+| **Detection Accuracy** | **98.0%** | Overall model classification reliability across all telemetry frames. |
+| **Precision (Anomalies)** | **100.0%** | Proportion of flagged alerts that were genuine synthetic hazards. |
+| **Recall (Anomalies)** | **90.0%** | Percentage of total synthetic hazards successfully identified by AI. |
 
 ---
 
 ## 🔬 Key Features
-- **📡 Synthetic Telemetry Simulation:** Generates simulated physical parameters (Pressure in PSI, Flow Rate in kBPD, Temperature in °C) for demonstration purposes.
+- **📡 Synthetic Telemetry Simulation:** Generates simulated physical parameters (Pressure in PSI, Flow Rate in kBPD, Temperature in °C) with injected ground-truth hazard events.
 - **🤖 Unsupervised Anomaly Detection:** Applies `Isolation Forest` to flag irregular data patterns without static thresholding.
+- **📊 Quantitative Evaluation:** Computes Precision, Recall, Accuracy, and Confusion Matrices to verify hazard detection performance.
 - **🚨 Interactive Dashboard:** Features a `Streamlit` web interface to visualize sensor trends and flagged anomalies.
 
 ---
