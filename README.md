@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Domain-Energy%20%26%20Gas-FF8C00?style=for-the-badge&logo=prometheus&logoColor=white" />
   <img src="https://img.shields.io/badge/AI/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Target-Aramco%20Readiness-00A3E0?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Predictive%20Maintenance-00A3E0?style=for-the-badge" />
 </p>
 
 ---
